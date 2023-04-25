@@ -1,0 +1,24 @@
+<html>
+    <meta charset='utf-8'>
+
+    <title>
+{% block title %}{% endblock %} | home
+    </title>
+
+<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <nav class="px-6 py-6 flex justify-between items-center border-b border-gray-200"> 
+    <div class='space-x-6'> 
+<a href="{% url 'users' %}" class="px-6 py-6 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-500" > Detail </a>
+    </div>
+
+</nav>
+
+    <div class="px-6 py-6">
+        {% block content %}
+         {% endblock %}
+     
+         </div>
+</body>
+</html>
